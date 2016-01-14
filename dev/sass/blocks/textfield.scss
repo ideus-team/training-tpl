@@ -1,0 +1,30 @@
+/**
+* Textfield
+*/
+.textfield {
+  display: inline-block;
+  width: 300px;
+  height: 40px;
+  margin: 4px 2px 4px 0;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border: 1px solid $color-textfield-border;
+  border-radius: 0;
+  box-shadow: none;
+  background: $color-textfield-bg;
+  font: normal 500 14px/40px $font-family-text;
+  color: $color-textfield-text;
+  vertical-align: middle;
+  transition: border-color 0.2s ease 0s;
+
+  &:focus {
+    border-color: $color-textfield-focus-border;
+    box-shadow: none;
+    outline: none;
+  }
+}
+textarea.textfield {
+  display: block;
+  height: 140px;
+  resize: none;
+}

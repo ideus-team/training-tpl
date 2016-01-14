@@ -1,0 +1,49 @@
+/**
+* Button
+*/
+.button {
+  display: inline-block;
+  height: 40px;
+  margin: 4px 2px 4px 0;
+  padding: 0 30px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font: normal 500 14px/40px $font-family-text;
+  text-transform: uppercase;
+  vertical-align: middle;
+  transition: background 0.2s ease 0s;
+  cursor: pointer;
+
+  &:visited { }
+  &:hover { }
+  &:active { }
+  &:focus { outline: none; }
+
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: default;
+  }
+  
+  /* Colors */
+  &-default {
+    background: $button-default-bg;
+    color: $button-default-text;
+
+    &:visited { }
+    &:hover { background: lighten($button-default-bg, 5%); }
+    &:active { background: darken($button-default-bg, 5%); }
+    &:focus { background: darken($button-default-bg, 5%); }
+  }
+  &-emphasis {
+    background: $button-emphasis-bg;
+    color: $button-emphasis-text;
+
+    &:visited { }
+    &:hover { background: lighten($button-emphasis-bg, 5%); }
+    &:active { background: darken($button-emphasis-bg, 5%); }
+    &:focus { background: darken($button-emphasis-bg, 5%); }
+  }
+}

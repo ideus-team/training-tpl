@@ -1,0 +1,45 @@
+/**
+* Table
+*/
+.table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-weight: 300;
+
+  thead {}
+  tbody {}
+  tfoot {
+    font-weight: 500;
+    color: $color-primary;
+  }
+
+  tr {}
+  th {
+    padding: $table-cell-padding;
+    font-weight: 500;
+    text-align: left;
+
+    // &:first-child { padding-left: 0; }
+    // &:last-child { padding-right: 0; }
+  }
+  td {
+    padding: $table-cell-padding;
+    text-align: left;
+
+    // &:first-child { padding-left: 0; }
+    // &:last-child { padding-right: 0; }
+  }
+
+  &.table-default {
+    background: $table-default-bg;
+    color: $table-default-text;
+
+    tbody td {
+      border-top: 1px solid $table-default-border;
+    }
+    tfoot td {
+      border-top: 2px solid $table-default-border;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+/******************************************************************************
+* Common Styles, Settings & Variables
+******************************************************************************/
+
+@import 'settings.scss';
+@import 'common.scss';
+
+
+
+
+/******************************************************************************
+* Styles
+******************************************************************************/
+
+/* Custom Text */
+@import 'blocks/custom.scss';
+
+/* Layout */
+@import 'blocks/layout.scss';
+@import 'blocks/navigation.scss';
+
+/* Blocks */
+@import 'blocks/columns.scss';
+@import 'blocks/panel.scss';
+@import 'blocks/button.scss';
+@import 'blocks/textfield.scss';
+@import 'blocks/table.scss';
+
+/* Tasks */
+// @import 'tasks/task-1.scss';

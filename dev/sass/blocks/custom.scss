@@ -1,0 +1,33 @@
+/**
+* Custom
+*/
+.custom-text {
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-family: $font-family-title;
+    color: $color-title;
+  }
+  h1 {
+    margin: 0 0 1em;
+    padding: 0 0 0.4em;
+    border-bottom: 1px solid $color-border-default;
+  }
+  h2, h3, h4, h5, h6 { margin: 1.8em 0 1em; }
+
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.7em; }
+  h3 { font-size: 1.5em; }
+  h4 { font-size: 1.2em; }
+  h5 { font-size: 1em; }
+  h6 { font-size: 0.8em; }
+
+  p, ul, ol {
+    margin: 0 0 1em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

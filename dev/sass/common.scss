@@ -1,0 +1,45 @@
+/**
+* Common
+*/
+html {
+  height: 100%;
+}
+body {
+  min-width: 960px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: $color-body-bg;
+  font: 400 14px/1.5 $font-family-text;
+  color: $color-text;
+}
+
+hr {
+  height: 0;
+  margin: 1em 0;
+  border: none;
+  border-top: 1px solid $color-border-default;
+}
+
+
+/**
+* Classes
+*/
+
+/* Block with code */
+.code {
+  margin: 30px 0;
+  padding: $code-padding;
+  background: $code-bg;
+  font-family: $font-family-code;
+  color: $code-text;
+  overflow-x: auto;
+}
+
+/* Text Colors */
+.primary {
+  color: $color-primary;
+}
+.emphasis {
+  color: $color-emphasis;
+}

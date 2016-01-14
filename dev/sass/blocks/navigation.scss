@@ -1,0 +1,78 @@
+/**
+* Navigation
+*/
+.navigation	{
+	font-size: 16px;
+	line-height: 40px;
+
+	&-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	&-item {}
+	&-link {
+		position: relative;
+		display: block;
+		padding: 0 ($sidebar-padding + 20px) 0 $sidebar-padding;
+		color: inherit;
+		text-decoration: none;
+
+		&:hover, &:active, &:focus {
+			background: lighten($color-primary, 5%);
+			text-decoration: none;
+		}
+		&:focus {
+			outline: none;
+		}
+
+		&.active {
+			background: darken($color-primary, 5%);
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: -10px;
+				dispay: block;
+				border-width: 20px 0 20px 10px;
+				border-style: solid;
+				border-color: transparent transparent transparent darken($color-primary, 5%);
+			}
+		}
+
+		&.done,
+		&.progress {
+			position: relative;
+
+			&:before {
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				display: block;
+				width: 20px;
+				height: 20px;
+				margin: -10px 0 0;
+				border-radius: 50%;
+				background: #fff;
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 20px;
+				color: $color-primary;
+				text-align: center;
+			}
+		}
+
+		&.done {
+			&:before {
+				content: '+';
+			}
+		}
+
+		&.progress {
+			&:before {
+				content: '~';
+			}
+		}
+	}
+}

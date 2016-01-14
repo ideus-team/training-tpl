@@ -1,0 +1,36 @@
+/**
+* Layout
+*/
+.layout {
+	max-height: 99999px;
+	height: 100%;
+
+	&-wrapper {
+		max-height: 99999px;
+		height: 100%;
+		background: $color-wrapper-bg;
+	}
+	&-main {
+		height: 100%;
+		background: $color-main-bg;
+		overlow: hidden;
+	}
+	&-sidebar {
+		float: left;
+		width: $sidebar-width;
+		height: 100%;
+		box-sizing: border-box;
+		padding: $sidebar-padding 0;
+		background: $color-sidebar-bg;
+		color: $color-sidebar;
+	}
+	&-content {
+		height: 100%;
+		margin: 0 0 0 $sidebar-width;
+		box-sizing: border-box;
+		padding: $content-padding;
+		background: $color-content-bg;
+		color: $color-content;
+		overflow-y: auto;
+	}
+}
