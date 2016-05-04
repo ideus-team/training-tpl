@@ -1,6 +1,10 @@
 <?php
   /* Variables */
   $uri = 'task-1';
+  $css = array();
+  $js = array(
+    'js/tasks/task-1.js',
+  );
 ?>
 
 <!-- Header -->
@@ -112,8 +116,6 @@ else { b; }
     </div>
 
   </div>
-
-  <script src="js/tasks/task-1.js"></script>
 
 <!-- Footer -->
 <?php include 'inc/footer.php' ?>

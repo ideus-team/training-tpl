@@ -1,7 +1,10 @@
 <?php
   /* Variables */
   $uri = 'task-2';
-  $state = 'done';
+  $css = array();
+  $js = array(
+    'js/tasks/task-2.js',
+  );
 ?>
 
 <!-- Header -->
@@ -31,8 +34,6 @@
     </div>
 
   </div>
-
-  <script src="js/tasks/task-2.js"></script>
 
 <!-- Footer -->
 <?php include 'inc/footer.php' ?>

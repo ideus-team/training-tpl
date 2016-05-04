@@ -13,6 +13,10 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/main.css">
 
+  <?php foreach($css as $value): ?>
+    <link rel="stylesheet" href="<?php echo $value; ?>">
+  <?php endforeach; ?>
+
 </head>
 <body>
   

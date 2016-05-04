@@ -1,6 +1,10 @@
 <?php
   /* Variables */
   $uri = 'task-4';
+  $css = array();
+  $js = array(
+    'js/tasks/task-4.js',
+  );
 ?>
 
 <!-- Header -->
